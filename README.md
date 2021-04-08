@@ -11,6 +11,21 @@ Para utilização basta fazer uma requisição GET para a seguinte URL:
 Será retornado uma array JSON contendo as capturas dos últimos 2 dias, com um 
 id único que pode ser usado para evitar duplicidade.
 
+Cada objeto da array terá as seguintes propriedades:
+- id: id único da captura;
+- deviceid: id único do dispositivo;
+- counter: o contador (leitura exibida no mostrador do medidor);
+- version: versão do firmware do dispositivo;
+- flow: fluxo das últimas 48h iniciando no momento da captura, sendo 0 para sem consumo, e 1 para consumo naquela hora;
+- mac: alarme magnético;
+- mov: alarme movimento;
+- ref: alarme de refluxo, ou seja, fluxo contrário ao esperado;
+- cut: alarme de corte do cabo (específico para medidodes de água);
+- receivedat: data/hora da captura no coletor (celular Android ou coletor com antena externa);
+- timestamp: data/hora interna do dispositivo;
+- serial: o serial que identifica o dispositivo;
+- number: um identificador livre que pode ser usado pelos usuários;
+
 Um exemplo feito para a url com token válido:
 ```
 HTTP STATUS: 200
