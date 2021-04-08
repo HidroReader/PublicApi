@@ -16,7 +16,7 @@ Cada objeto da array terá as seguintes propriedades:
 - deviceid: id único do dispositivo;
 - counter: o contador (leitura exibida no mostrador do medidor);
 - version: versão do firmware do dispositivo;
-- flow: fluxo das últimas 48h iniciando no momento da captura, sendo 0 para sem consumo, e 1 para consumo naquela hora;
+- flow: fluxo das últimas 32h iniciando no momento da captura, sendo 0 para sem consumo, e 1 para consumo naquela hora;
 - mac: alarme magnético;
 - mov: alarme movimento;
 - ref: alarme de refluxo, ou seja, fluxo contrário ao esperado;
